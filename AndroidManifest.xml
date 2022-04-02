@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.asBros.converter.PDF" platformBuildVersionCode="1" platformBuildVersionName="{4:1065353216}">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<application android:theme="resourceId:0x7f0e0008" android:label="PDF Converter" android:icon="res/drawable-xhdpi-v4/app_icon.png" android:name=".SketchApplication" android:allowBackup="true" android:usesCleartextTraffic="true" android:requestLegacyExternalStorage="true">
+		<activity android:name=".MainActivity" android:configChanges="0xda0" android:windowSoftInputMode="0x2" android:hardwareAccelerated="true" android:supportsPictureInPicture="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Info1Activity" android:screenOrientation="portrait" android:configChanges="0xda0" android:hardwareAccelerated="true" android:supportsPictureInPicture="true" />
+		<activity android:name=".DebugActivity" android:screenOrientation="portrait" />
+		<provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.asBros.converter.PDF.provider" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="res/xml/provider_paths.xml" />
+		</provider>
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
+	</application>
+</manifest>
