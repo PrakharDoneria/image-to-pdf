@@ -1,0 +1,35 @@
+Summary for /storage/emulated/0/show-java/sources/com.asBros.converter.PDF/jar-files/0.jar
+Decompiled with CFR 0.0
+
+
+com.asBros.converter.PDF.FileUtil
+----------------------------
+
+convertUriToFilePath(android.content.Context android.net.Uri )
+  Unable to fully structure code
+copyFile(java.lang.String java.lang.String )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [2[TRYBLOCK]], but top level block is 23[UNCONDITIONALDOLOOP]
+getDataColumn(android.content.Context android.net.Uri java.lang.String java.lang.String[] )
+  Unable to fully structure code
+readFile(java.lang.String )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [1[TRYBLOCK]], but top level block is 14[UNCONDITIONALDOLOOP]
+saveBitmap(android.graphics.Bitmap java.lang.String )
+  Loose catch block
+writeFile(java.lang.String java.lang.String )
+  Unable to fully structure code
+
+
+com.asBros.converter.PDF.MainActivity
+----------------------------
+
+onClick(android.view.View )
+  Unable to fully structure code
+onActivityResult(int int android.content.Intent )
+  Unable to fully structure code
+
+
+com.asBros.converter.PDF.SketchwareUtil
+----------------------------
+
+copyFromInputStream(java.io.InputStream )
+  Loose catch block
